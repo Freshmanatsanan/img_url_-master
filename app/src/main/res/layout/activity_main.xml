@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginHorizontal="16dp"
+    android:background="#513F51B5"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="341dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="26dp"
+        android:background="#4055CC"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="sans-serif"
+        android:text="RETRIEVE IMAGE DATA"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#B9EAF1"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/etURL"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <EditText
+        android:id="@+id/etURL"
+        android:layout_width="341dp"
+        android:layout_height="58dp"
+        android:layout_marginHorizontal="26dp"
+        android:layout_marginBottom="204dp"
+        android:hint=" Image URL"
+        android:textColor="#3F51B5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/clearbtn"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Clear URT"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etURL" />
+
+    <Button
+        android:id="@+id/fetchbtn"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="28dp"
+        android:text="Fetch URT"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/clearbtn"
+        app:layout_constraintTop_toBottomOf="@+id/etURL" />
+</androidx.constraintlayout.widget.ConstraintLayout>
